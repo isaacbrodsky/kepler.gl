@@ -189,8 +189,7 @@ export const INITIAL_VIS_STATE = {
 
   editor: {
     // GEO FEATURES (Shapes)
-    features: [],
-    selectedFeatureId: null
+    features: []
   }
 };
 
@@ -1346,6 +1345,23 @@ export const loadFilesErrUpdater = (state, {error}) => ({
 });
 
 /**
+ * Update editor features
+ * @memberof visStateUpdaters
+ * @param {Object} state `visState`
+ * @param {[Object]} features to store
+ * @return {Object} nextState
+ */
+export function setFeaturesUpdater(state, {features = []}) {
+  return {
+    ...state,
+    editor: {
+      ...state.editor,
+      features
+    }
+  }
+}
+
+/**
  * Helper function to update All layer domain and layer data of state
  * @memberof visStateUpdaters
  * @param {Object} state `visState`
@@ -1483,15 +1499,4 @@ export function updateAnimationDomain(state) {
       domain: mergedDomain
     }
   };
-}
-
-export function setFeaturesUpdater(state, {features = []}) {
-  return {
-    ...state,
-    editor: {
-      ...state.editor,
-      features,
-      selectedFeatureId: (features[0] || {}).id
-    }
-  }
 }
