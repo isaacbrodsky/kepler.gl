@@ -695,6 +695,7 @@ export const TOKEN_MISUSE_WARNING = '* If you do not provide your own token, the
 export const DISCLAIMER = 'You can change the Mapbox token later using the following instructions: ';
 export const MAP_CONFIG_DESCRIPTION = 'Map config will be included in the Json file. If you are using kepler.gl in your own app. You can copy this config and pass it to ';
 
+
 // Animation
 export const BASE_SPEED = 600;
 export const DEFAULT_TIME_FORMAT = 'MM/DD/YY HH:mm:ssa';
