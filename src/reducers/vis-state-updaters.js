@@ -139,6 +139,7 @@ export const defaultAnimationConfig = {
  * @property {Array} splitMaps - a list of objects of layer availabilities and visibilities for each map
  * @property {Object} layerClasses
  * @property {Object} animationConfig
+ * @property {Object} editor
  * @public
  */
 export const INITIAL_VIS_STATE = {
@@ -181,7 +182,6 @@ export const INITIAL_VIS_STATE = {
   //
   // defaults layer classes
   layerClasses: LayerClasses,
-
 
   // default animation
   // time in unix timestamp (milliseconds) (the number of seconds since the Unix Epoch)
