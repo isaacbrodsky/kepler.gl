@@ -65,7 +65,7 @@ export function getGeojsonDataMaps(allData, getFeature) {
     'MultiPoint',
     'LineString',
     'MultiLineString',
-    'DrawPolygon',
+    'Polygon',
     'MultiPolygon',
     'GeometryCollection'
   ];
@@ -103,7 +103,7 @@ export function parseGeometryFromString(geoString) {
   let parsedGeo;
 
   // try parse as geojson string
-  // {"type":"DrawPolygon","coordinates":[[[-74.158491,40.83594]]]}
+  // {"type":"Polygon","coordinates":[[[-74.158491,40.83594]]]}
   try {
     parsedGeo = JSON.parse(geoString);
   } catch (e) {

@@ -670,7 +670,7 @@ export const savedStateV0 = {
                 index: 0
               },
               geometry: {
-                type: 'DrawPolygon',
+                type: 'Polygon',
                 coordinates: [
                   [
                     [-122.40115971858505, 37.78202426695214],
@@ -696,7 +696,7 @@ export const savedStateV0 = {
                 index: 1
               },
               geometry: {
-                type: 'DrawPolygon',
+                type: 'Polygon',
                 coordinates: [
                   [
                     [-122.47099072114979, 37.787534455433345],
@@ -722,7 +722,7 @@ export const savedStateV0 = {
                 index: 2
               },
               geometry: {
-                type: 'DrawPolygon',
+                type: 'Polygon',
                 coordinates: [
                   [
                     [-122.50828762723958, 37.733266432915535],
@@ -751,7 +751,7 @@ export const savedStateV0 = {
                 index: 3
               },
               geometry: {
-                type: 'DrawPolygon',
+                type: 'Polygon',
                 coordinates: [
                   [
                     [-122.50828762723958, 37.733266432915535],
@@ -1382,7 +1382,7 @@ mergedLayer4.dataToFeature = {
       index: 0
     },
     geometry: {
-      type: 'DrawPolygon',
+      type: 'Polygon',
       coordinates: [
         [
           [-122.40115971858505, 37.78202426695214],
@@ -1403,7 +1403,7 @@ mergedLayer4.dataToFeature = {
       index: 1
     },
     geometry: {
-      type: 'DrawPolygon',
+      type: 'Polygon',
       coordinates: [
         [
           [-122.47099072114979, 37.787534455433345],
@@ -1424,7 +1424,7 @@ mergedLayer4.dataToFeature = {
       index: 2
     },
     geometry: {
-      type: 'DrawPolygon',
+      type: 'Polygon',
       coordinates: [
         [
           [-122.50828762723958, 37.733266432915535],

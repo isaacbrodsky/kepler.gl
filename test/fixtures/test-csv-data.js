@@ -890,7 +890,7 @@ export const updatedLayerV2 = {
         index: 0
       },
       geometry: {
-        type: 'DrawPolygon',
+        type: 'Polygon',
         coordinates: [
           [
             [-74.158491, 40.835947],
@@ -906,7 +906,7 @@ export const updatedLayerV2 = {
         index: 1
       },
       geometry: {
-        type: 'DrawPolygon',
+        type: 'Polygon',
         coordinates: [
           [
             [-74.31687, 40.656696],
@@ -923,7 +923,18 @@ export const updatedLayerV2 = {
       },
       geometry: {
         type: 'Polygon',
-        coordinates: [[[-74.387589, 40.632238], [-74.387589, 40.632238]]]
+        coordinates: [
+          [
+            [
+              -74.387589,
+              40.632238
+            ],
+            [
+              -74.387589,
+              40.632238
+            ]
+          ]
+        ]
       }
     },
     3: {
@@ -932,7 +943,7 @@ export const updatedLayerV2 = {
         index: 3
       },
       geometry: {
-        type: 'DrawPolygon',
+        type: 'Polygon',
         coordinates: [
           [
             [-74.165995, 40.747969],
@@ -979,7 +990,18 @@ export const updatedLayerSimplifiedShape = {
       },
       geometry: {
         type: 'Polygon',
-        coordinates: [[[-74.158491, 40.835947], [-74.158491, 40.835947]]]
+        coordinates: [
+          [
+            [
+              -74.158491,
+              40.835947
+            ],
+            [
+              -74.158491,
+              40.835947
+            ]
+          ]
+        ]
       }
     },
     1: {
@@ -988,7 +1010,7 @@ export const updatedLayerSimplifiedShape = {
         index: 1
       },
       geometry: {
-        type: 'DrawPolygon',
+        type: 'Polygon',
         coordinates: [
           [
             [-74.31687, 40.656696],
@@ -1004,7 +1026,7 @@ export const updatedLayerSimplifiedShape = {
         index: 2
       },
       geometry: {
-        type: 'DrawPolygon',
+        type: 'Polygon',
         coordinates: [
           [
             [-74.387589, 40.632238],
@@ -1021,7 +1043,7 @@ export const updatedLayerSimplifiedShape = {
         index: 3
       },
       geometry: {
-        type: 'DrawPolygon',
+        type: 'Polygon',
         coordinates: [
           [
             [-74.165995, 40.747969],
