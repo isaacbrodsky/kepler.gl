@@ -1036,7 +1036,6 @@ export const theme = {
   notificationPanelItemWidth,
   notificationPanelItemHeight,
 
-
   // datagrid
   columnWidth,
   extendColumnWidth,
