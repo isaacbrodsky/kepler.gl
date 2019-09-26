@@ -62,9 +62,10 @@ export const CenterFlexbox = styled.div`
 
 export const SpaceBetweenFlexbox = styled.div`
   display: flex;
-  align-items: space-between;
+  justify-content: space-between;
   margin-left: -16px;
 `;
+
 export const SBFlexboxItem = styled.div`
   flex-grow: 1;
   margin-left: 16px;
@@ -74,6 +75,17 @@ export const PanelLabel = styled.label.attrs({
   className: 'side-panel-panel__label'
 })`
   color: ${props => props.theme.labelColor};
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+`;
+
+export const PanelValue = styled.label.attrs({
+  className: 'side-panel-panel__value'
+})`
+  color: ${props => props.theme.textColor};
   display: inline-block;
   font-size: 11px;
   font-weight: 400;
