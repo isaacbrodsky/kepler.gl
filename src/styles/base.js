@@ -1045,7 +1045,6 @@ export const theme = {
   gridDefaultWidth,
   gridDefaultHeight,
 
-
   // time display
   timeDisplayBorderRadius,
   timeDisplayHeight,

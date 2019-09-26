@@ -24,9 +24,10 @@ import PropTypes from 'prop-types';
 import MapboxGLMap from 'react-map-gl';
 import DeckGL from 'deck.gl';
 import {createSelector} from 'reselect';
+import WebMercatorViewport from 'viewport-mercator-project';
 
 // components
-import MapTooltipFactory from 'components/map/map-tooltip';
+import MapPopoverFactory from 'components/map/map-popover';
 import MapControlFactory from 'components/map/map-control';
 import {StyledMapContainer} from 'components/common/styled-components';
 
@@ -57,7 +58,7 @@ const TRANSITION_DURATION = 0;
 
 MapContainerFactory.deps = [MapPopoverFactory, MapControlFactory];
 
-export default function MapContainerFactory(MapTooltip, MapControl) {
+export default function MapContainerFactory(MapPopover, MapControl) {
   class MapContainer extends Component {
     static propTypes = {
       // required
@@ -419,11 +420,7 @@ export default function MapContainerFactory(MapTooltip, MapControl) {
         uiState,
         uiStateActions,
         visStateActions,
-        editor,
-        hoverInfo,
-        clicked,
-        interactionConfig,
-        mousePos
+        editor
       } = this.props;
       const layersToRender = this.layersToRenderSelector(this.props);
       if (!mapStyle.bottomMapStyle) {
@@ -501,19 +498,7 @@ export default function MapContainerFactory(MapTooltip, MapControl) {
               />
             </div>
           )}
-          <MapTooltip
-            clicked={clicked}
-            datasets={datasets}
-            getHoverXY={this._getHoverXY}
-            hoverInfo={hoverInfo}
-            interactionConfig={interactionConfig}
-            layers={layers}
-            layersToRender={layersToRender}
-            mapLayers={mapLayers}
-            mapState={mapState}
-            mousePos={mousePos}
-            onClose={this._onCloseMapPopover}
-          />
+          {this._renderMapPopover(layersToRender)}
         </StyledMapContainer>
       );
     }
