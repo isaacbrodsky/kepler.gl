@@ -85,7 +85,6 @@ export const editBottomMapStyle = memoize(
       invisibleFilters.every(match => !match(layer))
     );
 
-    // console.log(filteredLayers)
     return {
       ...mapStyle.style,
       layers: filteredLayers
